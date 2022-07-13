@@ -1,0 +1,46 @@
+{% extends "abc.html" %}
+{%block body%}
+<style>
+form {background:#000000;}
+.contact-form{
+    position: absolute;
+    left: 10%;
+    background: fixed;
+}
+#name{
+  border-top:navajowhite;
+}
+#mobile{
+  border-top:navajowhite;
+}
+#city{border-top:navajowhite;}
+
+</style>
+
+<h1 style="color:aliceblue;text-align: center;"> Welcome to Om Ply</h1>
+
+<a class="btn btn-danger" href="/Estimate" style="float:right;margin-right: 10px;"> Get  Free Estimate </a> <br><br><br>
+   <div  class="col-sm-6">
+    <h3 style="color: aquamarine ;font-size:50PX;margin-left: 20px;margin-top: 60px;"> Get Best things, </h3>
+    <h3 style="color: aquamarine ;font-size:60PX;margin-left: 60px;">  at Best Price.</h3>
+    </div>
+    
+    <div  class="col-sm-6">        
+        <form class="card-body form"   action="/contact" method="POST" style="background-color:white;margin-right: 40px;margin-left: 100px;margin-top: 20px;width:300px;height: 350px;" >
+            <h3 style="color:crimson;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 10px;">Contact Form</h3> <br>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name"> <br>
+              
+                <input type="mobile" class="form-control"id="mobile" placeholder="Enter your mobile number" name="mobile"> <br>
+              
+                <input type="text" class="form-control" id="city" placeholder="Enter your City" name="city"> <br>
+              
+              <label class="form-check-label" style="color:brown">
+                <input class="form-check-input" type="checkbox" name="wp" style="margin-left: 10px"> you can reach me on whatsapp
+              </label> <br><br>
+           
+            <button type="submit" class="btn btn-primary mt-3" style="margin-left: 20px">Submit</button>
+          </form>
+        </div>
+   <br><br><br>
+
+{%endblock%}
