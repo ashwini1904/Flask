@@ -1,4 +1,4 @@
-
+#project regarding creating a website
 from flask import Config, Flask,render_template, request,redirect
 from flask_sqlalchemy import SQLAlchemy
 
@@ -18,6 +18,9 @@ class Customer(db.Model):
 
     def __str__(self):
         return self.name
+
+class User():
+    pass        
 
 
 @myapp.route("/")
